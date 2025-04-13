@@ -1,18 +1,137 @@
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('./fonts/Nico-Moji/nicomoji/NicoMoji-Regular.ttf') format('truetype');
+  }
+  
+
+body {    
     margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-header {
-    background-color: blue;
+.img {    
+    max-width: 50%;
+    height: auto;
+    opacity: 0.7;
+    background: url(./img/background.jpg), lightgray 50% / cover no-repeat;
+    display: block;
+    margin: 0 auto;
+}
+
+header {    
+    background-color: lightseagreen;
     background-size: cover;
-    padding: 75px;
+    padding: 20px;
 }
 
-.titol {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.title {
+    font-family: 'Nico Moji';
     color: white;
     text-align: center;
-    font-size: 50;
+    font-size: 600%;
+}
+
+#alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom:3% ;
+}
+
+.letter-btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#board,
+#board div {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#wordsToGuess {
+    font-size: 50px;
+}
+
+#imgBoard {
+    max-width: 35%;
+    height: auto;
+}
+
+#playerDiv {
+    text-align: center; 
+    font-family: 'Nico Moji';
+}
+
+.input {
+    width: 300px; 
+    height: auto;
+    font-size: 18px; 
+    padding: 10px; 
+    margin-right: 10px;
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.btn {
+    width: 120px; 
+    height: 45px; 
+    font-size: 20px; 
+    cursor: pointer;
+    background-color: #20B2AA; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+#playerTitle {
+    font-size: 150%;
+}
+
+.playerPlaying {
+    text-align: center; 
+    display: none;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+#stats {
+    text-align: center;
+    font-size: 150%;
+}
+
+#btnRestart{
+    width: 120px; 
+    height: 45px; 
+    font-size: 25px;
+    background-color: lightsalmon; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+#btnExit{
+    width: 120px; 
+    height: 45px; 
+    font-size: 25px;
+    background-color: lightcoral; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+.btnEasterEgg {
+    background-color: transparent; 
+    color: white; 
+    border: 1px solid white;
 }
